@@ -5,7 +5,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +23,7 @@ class DemoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Sample Items",
+      title: 'Sample Items',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -41,13 +40,13 @@ class ItemListPage extends StatefulWidget {
 
 class _ItemListPageState extends State<ItemListPage> {
   List<String> itemList = [];
-  static const String dummyImageURL = "https://twitter.com/suguru_ohki/photo";
+  static const String dummyImageURL = 'https://twitter.com/suguru_ohki/photo';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Item List"),
+        title: const Text('Item List'),
       ),
       body: ListView.builder(
         itemCount: itemList.length,
@@ -110,13 +109,13 @@ class ItemAddPage extends StatefulWidget {
 }
 
 class _ItemAddPageState extends State<ItemAddPage> {
-  String itemTitle = "";
+  String itemTitle = '';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Add Item"),
+        title: const Text('Add Item'),
       ),
       body: Container(
         padding: const EdgeInsets.all(48),
@@ -127,7 +126,7 @@ class _ItemAddPageState extends State<ItemAddPage> {
               child: TextField(
                 maxLines: 1,
                 decoration: const InputDecoration(
-                  labelText: "Input your new Item!",
+                  labelText: 'Input your new Item!',
                   border: OutlineInputBorder(),
                 ),
                 onChanged: (String newItemTitle) {
@@ -150,7 +149,7 @@ class _ItemAddPageState extends State<ItemAddPage> {
                   Navigator.of(context).pop(itemTitle);
                 },
                 child: const Text(
-                  "Add!",
+                  'Add!',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -163,7 +162,7 @@ class _ItemAddPageState extends State<ItemAddPage> {
                   Navigator.of(context).pop();
                 },
                 child: const Text(
-                  "Abort",
+                  'Abort',
                   style: TextStyle(color: Colors.white),
                 ),
                 color: Colors.redAccent,
