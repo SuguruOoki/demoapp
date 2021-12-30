@@ -143,8 +143,7 @@ class _ItemAddPageState extends State<ItemAddPage> {
             Container(
               width: double.infinity,
               margin: const EdgeInsets.all(1),
-              child: RaisedButton(
-                color: Colors.indigo,
+              child: ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pop(itemTitle);
                 },
