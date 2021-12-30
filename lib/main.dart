@@ -156,7 +156,7 @@ class _ItemAddPageState extends State<ItemAddPage> {
             Container(
               width: double.infinity,
               margin: const EdgeInsets.all(1),
-              child: FlatButton(
+              child: TextButton(
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -164,7 +164,6 @@ class _ItemAddPageState extends State<ItemAddPage> {
                   'Abort',
                   style: TextStyle(color: Colors.white),
                 ),
-                color: Colors.redAccent,
               ),
             ),
           ],
