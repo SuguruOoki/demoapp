@@ -160,6 +160,9 @@ class _ItemAddPageState extends State<ItemAddPage> {
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.red,
+                ),
                 child: const Text(
                   'Abort',
                   style: TextStyle(color: Colors.white),
