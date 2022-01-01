@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DemoApp(),
+      home: Demo(),
     );
   }
 }
 
 //アプリ全体
-class DemoApp extends StatelessWidget {
+class Demo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -109,7 +109,7 @@ class ItemAddPage extends StatefulWidget {
 }
 
 class _ItemAddPageState extends State<ItemAddPage> {
-  String itemTitle = '';
+  String itemTitle = '_ItemAddPageState';
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +164,7 @@ class _ItemAddPageState extends State<ItemAddPage> {
                   backgroundColor: Colors.red,
                 ),
                 child: const Text(
-                  'Abort',
+                  'Abort!',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
